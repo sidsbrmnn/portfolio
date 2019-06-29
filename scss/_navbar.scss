@@ -1,0 +1,79 @@
+// _navbar.scss
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0.75rem;
+  .navbar-brand {
+    display: inline-block;
+    padding: 0.75rem 0;
+    img {
+      width: 48px;
+      height: auto;
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0.25rem 0;
+  }
+  .nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 0;
+    color: $text-muted;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    &.active {
+      color: $text-dark;
+    }
+    &:hover {
+      color: rgba($color: $text-dark, $alpha: 0.85);
+    }
+  }
+  .nav-btn {
+    color: $white;
+    background: $primary;
+    border-radius: 0.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-nav {
+      flex-direction: row;
+    }
+  }
+  .navbar-nav {
+    li {
+      padding: 0 0.5rem;
+    }
+    .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      &.active {
+        border-bottom: 1.5px solid $primary;
+      }
+    }
+  }
+}

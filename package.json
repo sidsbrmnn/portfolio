@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "It's my portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "gulp sass:watch",
+    "build": "gulp sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidsbrmnn/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Siddharth Subramanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidsbrmnn/portfolio/issues"
+  },
+  "homepage": "https://github.com/sidsbrmnn/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "eslint": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.12.0"
+  }
+}
