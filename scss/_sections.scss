@@ -3,14 +3,41 @@
 section {
   padding: 3rem 0 !important;
   .section-heading {
-    color: $text-dark;
+    color: $dark;
     font-size: 3.2rem;
     font-weight: normal;
     text-transform: capitalize;
-    letter-spacing: 1.5px;
     &::first-letter {
       color: $primary;
     }
+  }
+}
+
+.home-subs {
+  display: block;
+  color: $text-muted;
+  font-size: 1.1rem;
+  margin-top: -1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .home-subs {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-subs {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-subs {
+    width: 50%;
   }
 }
 
@@ -19,19 +46,19 @@ section {
   .section-heading {
     text-transform: none;
   }
-  .home-subs {
-    display: block;
-    color: $text-muted;
-    font-size: 1.1rem;
-    margin-top: -1.5rem;
-  }
-
   .img-landing {
     display: block;
     text-align: center;
     width: 60%;
     height: auto;
   }
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  color: $dark;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .contact-wrapper {
@@ -47,7 +74,6 @@ section {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 4rem;
   color: $white !important;
-  letter-spacing: 1px !important;
   .title {
     display: inline-block;
     font-size: 2.2rem;
@@ -62,7 +88,6 @@ section {
     color: $primary;
     background: $white;
     font-weight: bold;
-    letter-spacing: 1px;
     font-size: 0.9rem;
     padding: 1rem 2rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

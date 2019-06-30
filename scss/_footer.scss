@@ -1,6 +1,7 @@
 // _footer.scss
 
 .footer {
+  width: 100%;
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
       letter-spacing: 1px;
       text-transform: capitalize;
       &:hover {
-        color: $text-dark;
+        color: $dark;
       }
     }
   }
@@ -42,7 +43,7 @@
       padding: 0 0.5rem;
       color: $text-muted;
       &:hover {
-        color: $text-dark;
+        color: $dark;
       }
       i {
         font-size: 1.1rem;

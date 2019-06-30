@@ -36,10 +36,10 @@
     letter-spacing: 1px;
     font-weight: 600;
     &.active {
-      color: $text-dark;
+      color: $dark;
     }
     &:hover {
-      color: rgba($color: $text-dark, $alpha: 0.85);
+      color: rgba($color: $dark, $alpha: 0.85);
     }
   }
   .nav-btn {
