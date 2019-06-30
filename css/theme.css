@@ -146,6 +146,8 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
   }
   .navbar-nav li {
     padding: 0 0.5rem;
@@ -156,6 +158,9 @@ body {
   }
   .navbar-nav .nav-link.active {
     border-bottom: 1.5px solid #588cfe;
+  }
+  .navbar-nav .nav-btn {
+    padding: 1rem 1.5rem;
   }
 }
 
