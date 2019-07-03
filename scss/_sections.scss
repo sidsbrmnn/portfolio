@@ -3,6 +3,7 @@
 section {
   padding: 3rem 0 !important;
   .section-heading {
+    font-family: "PT Sans", sans-serif;
     color: $dark;
     font-size: 3.2rem;
     font-weight: normal;
@@ -20,6 +21,7 @@ section {
   margin-top: -1.5rem;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.5rem;
   width: 95%;
 }
 
