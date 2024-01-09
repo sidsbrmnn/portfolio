@@ -13,9 +13,9 @@ const Home = () => {
           </h1>
           <p className="mt-6 w-full max-w-prose leading-7 md:text-lg">
             A Computer Science grad student at Northern Arizona University,
-            Flagstaff. Formerly a full-stack developer and DevOps engineer at
+            Flagstaff. Previously a full-stack developer and DevOps engineer at
             Betsol with a keen interest in building scalable and performant
-            applications.
+            systems.
           </p>
           <div className="mt-8 flex items-center justify-start space-x-5">
             <SocialLink
