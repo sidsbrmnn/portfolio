@@ -1,14 +1,12 @@
 {
-  "name": "sidsbrmnn.github.io",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out -m \"deploy to gh-pages\" --nojekyll"
+    "lint": "next lint"
   },
   "dependencies": {
     "clsx": "^2.1.0",
