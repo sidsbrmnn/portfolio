@@ -12,10 +12,6 @@ export const metadata: Metadata = {
   title: 'Siddharth Subramanian | Full Stack Engineer based in Flagstaff, AZ',
   description:
     'A full stack engineer based in Flagstaff, AZ currently pursuing a Masters in Computer Science at Northern Arizona University.',
-  authors: {
-    name: 'Siddharth Subramanian',
-    url: 'https://sidsbrmnn.github.io',
-  },
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
