@@ -5,7 +5,7 @@ import './globals.css'
 const poppins = Poppins({
   weight: ['400', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--default-font-family',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className="font-sans text-slate-500 antialiased">{children}</body>
+      <body className="text-slate-500 antialiased">{children}</body>
     </html>
   )
 }
