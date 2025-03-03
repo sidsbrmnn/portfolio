@@ -1,4 +1,25 @@
-import { socials } from '@/lib/data'
+import Link from 'next/link'
+
+import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/social-icons'
+import siteMeta from '@/lib/metadata'
+
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>
+}) {
+  return (
+    <Link
+      target="_blank"
+      rel="noreferrer noopener"
+      className="text-slate-400 transition-colors duration-200 hover:text-slate-500"
+      {...props}
+    >
+      <Icon className="size-6" />
+    </Link>
+  )
+}
 
 const Home = () => {
   return (
@@ -15,19 +36,22 @@ const Home = () => {
             Betsol with a keen interest in building scalable and performant
             systems.
           </p>
-          <div className="mt-8 flex items-center justify-start space-x-5">
-            {socials.map((item, id) => (
-              <a
-                key={id}
-                href={item.href}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="block text-slate-400 transition-colors duration-200 hover:text-slate-500"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="size-6" />
-              </a>
-            ))}
+          <div className="mt-8 flex items-center gap-5">
+            <SocialLink
+              href={siteMeta.author.x}
+              icon={XIcon}
+              aria-label="Follow on X"
+            />
+            <SocialLink
+              href={siteMeta.author.github}
+              icon={GitHubIcon}
+              aria-label="Follow on GitHub"
+            />
+            <SocialLink
+              href={siteMeta.author.linkedin}
+              icon={LinkedInIcon}
+              aria-label="Follow on LinkedIn"
+            />
           </div>
         </div>
       </section>
