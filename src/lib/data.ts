@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from '../app/components/social-icons'
+import { GitHubIcon, LinkedInIcon, XIcon } from '../components/social-icons'
 
 export const socials = [
   {
