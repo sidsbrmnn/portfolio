@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { type Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'A full stack engineer based in Flagstaff, AZ currently pursuing a Masters in Computer Science at Northern Arizona University.',
 }
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <html lang="en" className={poppins.variable}>
       <body className="text-slate-500 antialiased">{children}</body>
