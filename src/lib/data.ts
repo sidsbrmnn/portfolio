@@ -1,19 +1,20 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/social-icons'
+import siteMeta from './metadata'
 
 export const socials = [
   {
     name: 'Follow on X',
-    href: 'https://x.com/sidsbrmnn',
+    href: siteMeta.author.x,
     icon: XIcon,
   },
   {
     name: 'Follow on GitHub',
-    href: 'https://github.com/sidsbrmnn',
+    href: siteMeta.author.github,
     icon: GitHubIcon,
   },
   {
     name: 'Follow on LinkedIn',
-    href: 'https://www.linkedin.com/in/sidsbrmnn',
+    href: siteMeta.author.linkedin,
     icon: LinkedInIcon,
   },
 ]
