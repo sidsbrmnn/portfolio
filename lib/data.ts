@@ -1,19 +1,19 @@
-import { GitHub, LinkedIn, Twitter } from '../app/components/icons'
+import { GitHubIcon, LinkedInIcon, XIcon } from '../app/components/social-icons'
 
 export const socials = [
   {
     name: 'Siddharth on Twitter',
     href: 'https://twitter.com/sidsbrmnn',
-    icon: Twitter,
+    icon: XIcon,
   },
   {
     name: 'Siddharth on GitHub',
     href: 'https://github.com/sidsbrmnn',
-    icon: GitHub,
+    icon: GitHubIcon,
   },
   {
     name: 'Siddharth on LinkedIn',
     href: 'https://linkedin.com/in/sidsbrmnn',
-    icon: LinkedIn,
+    icon: LinkedInIcon,
   },
 ]

@@ -25,7 +25,7 @@ const Home = () => {
                 className="block text-slate-400 transition-colors duration-200 hover:text-slate-500"
               >
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-5 w-5" />
+                <item.icon className="size-6" />
               </a>
             ))}
           </div>
