@@ -1,4 +1,4 @@
-import { socials } from '../lib/data'
+import { socials } from '@/lib/data'
 
 const Home = () => {
   return (
